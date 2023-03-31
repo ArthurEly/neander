@@ -1,0 +1,115 @@
+|lab0412
+d15 <= decod2x4:inst17.d3
+a1 => decod2x4:inst17.a1
+a1 => decod2x4:inst16.a1
+a1 => decod2x4:inst15.a1
+a1 => decod2x4:inst13.a1
+a0 => decod2x4:inst17.a0
+a0 => decod2x4:inst16.a0
+a0 => decod2x4:inst15.a0
+a0 => decod2x4:inst13.a0
+a3 => decod2x4:inst12.a1
+a2 => decod2x4:inst12.a0
+on => decod2x4:inst12.stts
+d14 <= decod2x4:inst17.d2
+d13 <= decod2x4:inst17.d1
+d12 <= decod2x4:inst17.d0
+d11 <= decod2x4:inst16.d3
+d10 <= decod2x4:inst16.d2
+d9 <= decod2x4:inst16.d1
+d8 <= decod2x4:inst16.d0
+d7 <= decod2x4:inst15.d3
+d6 <= decod2x4:inst15.d2
+d5 <= decod2x4:inst15.d1
+d4 <= decod2x4:inst15.d0
+d3 <= decod2x4:inst13.d3
+d2 <= decod2x4:inst13.d2
+d1 <= decod2x4:inst13.d1
+d0 <= decod2x4:inst13.d0
+
+
+|lab0412|decod2x4:inst17
+d3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+stts => inst.IN0
+stts => inst6.IN0
+stts => inst7.IN0
+stts => inst8.IN0
+a1 => inst3.IN0
+a1 => inst2.IN0
+a1 => inst4.IN0
+a0 => inst3.IN1
+a0 => inst5.IN0
+a0 => inst1.IN1
+d2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+d0 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab0412|decod2x4:inst12
+d3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+stts => inst.IN0
+stts => inst6.IN0
+stts => inst7.IN0
+stts => inst8.IN0
+a1 => inst3.IN0
+a1 => inst2.IN0
+a1 => inst4.IN0
+a0 => inst3.IN1
+a0 => inst5.IN0
+a0 => inst1.IN1
+d2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+d0 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab0412|decod2x4:inst16
+d3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+stts => inst.IN0
+stts => inst6.IN0
+stts => inst7.IN0
+stts => inst8.IN0
+a1 => inst3.IN0
+a1 => inst2.IN0
+a1 => inst4.IN0
+a0 => inst3.IN1
+a0 => inst5.IN0
+a0 => inst1.IN1
+d2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+d0 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab0412|decod2x4:inst15
+d3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+stts => inst.IN0
+stts => inst6.IN0
+stts => inst7.IN0
+stts => inst8.IN0
+a1 => inst3.IN0
+a1 => inst2.IN0
+a1 => inst4.IN0
+a0 => inst3.IN1
+a0 => inst5.IN0
+a0 => inst1.IN1
+d2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+d0 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab0412|decod2x4:inst13
+d3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+stts => inst.IN0
+stts => inst6.IN0
+stts => inst7.IN0
+stts => inst8.IN0
+a1 => inst3.IN0
+a1 => inst2.IN0
+a1 => inst4.IN0
+a0 => inst3.IN1
+a0 => inst5.IN0
+a0 => inst1.IN1
+d2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+d0 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+

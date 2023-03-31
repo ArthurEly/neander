@@ -1,0 +1,177 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\circuitosdigitais\lab041\simulation\qsim
+v\lab041-bkp 
+Z1 !s100 4iYIcJTLN?Ej1?S`@VGa73
+Z2 IO>UeSC1_AOa1=_NlUkCfO2
+Z3 V@YhW;SF2^K7BlGzN[hzbb2
+Z4 dE:\circuitosdigitais\lab041\simulation\qsim
+Z5 w1670943620
+Z6 8lab041.vo
+Z7 Flab041.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|lab041.vo|
+Z10 o-work work -O0
+Z11 n@134lab041-bkp@040
+Z12 !s108 1670943621.704000
+Z13 !s107 lab041.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vlab041
+Z14 I;9?=APZUk`be`=iHDE>Bj3
+Z15 V73[eo]L^=BH75NaYOoz1c2
+R4
+Z16 w1670951610
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+Z17 !s100 K7a<:DjPI4V7iMF93=zKJ1
+Z18 !s108 1670951611.268000
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+vlab0412
+Z19 I7OEQVzRC`=zF^^1c2HCnM2
+Z20 VHlP8OUGE;PUjZJ`TzG6iQ1
+Z21 dI:\circuitosdigitais\lab041\simulation\qsim
+Z22 w1671072216
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+!i10b 1
+Z23 !s100 ;9@7M4@NGTAQ^f804^UgD1
+!s85 0
+Z24 !s108 1671072215.299000
+R13
+!s101 -O0
+vlab0412_vlg_check_tst
+!i10b 1
+Z25 !s100 gR8e^4ok]j;GfD<Km?hQ92
+Z26 IWQNOn?_W0iIf>WMKX1HDB2
+Z27 VUSY1iAWQ2=z;U2VGPFh4`1
+R21
+Z28 w1671072214
+Z29 8simutwo.vwf.vt
+Z30 Fsimutwo.vwf.vt
+L0 65
+R8
+r1
+!s85 0
+31
+Z31 !s108 1671072215.480000
+Z32 !s107 simutwo.vwf.vt|
+Z33 !s90 -work|work|simutwo.vwf.vt|
+!s101 -O0
+R10
+vlab0412_vlg_sample_tst
+!i10b 1
+!s100 I`<lP7I;Tg:b8WhDQWWMm3
+IHo3B4JGcaXTa>23DHNMLV0
+V]>LQh>6IR?<8VE5_lXD<P0
+R21
+R28
+R29
+R30
+L0 29
+R8
+r1
+!s85 0
+31
+R31
+R32
+R33
+!s101 -O0
+R10
+vlab0412_vlg_vec_tst
+!i10b 1
+!s100 VMbMNbA@7[6Yjj=42Ya;S2
+IkV9C^3^T?@Hf3dK8MG:cX2
+Z34 V5a>fM8U=1[XGaY^KEF1KZ1
+R21
+R28
+R29
+R30
+Z35 L0 565
+R8
+r1
+!s85 0
+31
+R31
+R32
+R33
+!s101 -O0
+R10
+vlab041_vlg_check_tst
+Z36 IIVIn;@8?<ANO942aZEHM00
+Z37 VaJCgAQI1C26<P9U>_IZ2S2
+R4
+Z38 w1670951608
+R29
+R30
+L0 61
+R8
+r1
+31
+Z39 !s108 1670951611.580000
+Z40 !s107 simutwo.vwf.vt|
+R33
+R10
+Z41 !s100 dlB:?3HmcJJ`mV=c_hlKa1
+!i10b 1
+!s85 0
+!s101 -O0
+vlab041_vlg_sample_tst
+Z42 ID6<c0nSSI=PT@P`Y?jS>D2
+Z43 V;`:AT[;EVGbaEADI<IESP2
+R4
+R38
+R29
+R30
+L0 29
+R8
+r1
+31
+R39
+R40
+R33
+R10
+Z44 !s100 mZCnl>=e3oBI2heU]Y`9@0
+!i10b 1
+!s85 0
+!s101 -O0
+vlab041_vlg_vec_tst
+Z45 I_L;ViPlWI4JlIaK^5blIS0
+Z46 V_bm=AjMK8KcXBC22@Z<nk0
+R4
+R38
+R29
+R30
+Z47 L0 237
+R8
+r1
+31
+R39
+R40
+R33
+R10
+Z48 !s100 hCJR?g8iBN_Ca35<gmc682
+!i10b 1
+!s85 0
+!s101 -O0

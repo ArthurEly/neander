@@ -1,0 +1,42 @@
+library verilog;
+use verilog.vl_types.all;
+entity uc is
+    port(
+        carga_rem       : out    vl_logic;
+        N               : in     vl_logic;
+        Z               : in     vl_logic;
+        JN              : in     vl_logic;
+        JZ              : in     vl_logic;
+        JMP             : in     vl_logic;
+        STA             : in     vl_logic;
+        LDA             : in     vl_logic;
+        ADD             : in     vl_logic;
+        \OR\            : in     vl_logic;
+        \AND\           : in     vl_logic;
+        t3              : in     vl_logic;
+        t0              : in     vl_logic;
+        t5              : in     vl_logic;
+        inc_pc          : out    vl_logic;
+        t4              : in     vl_logic;
+        t1              : in     vl_logic;
+        sel             : out    vl_logic;
+        carga_rdm       : out    vl_logic;
+        t6              : in     vl_logic;
+        read            : out    vl_logic;
+        write           : out    vl_logic;
+        t7              : in     vl_logic;
+        ULA_y           : out    vl_logic;
+        ULA_add         : out    vl_logic;
+        ULA_or          : out    vl_logic;
+        ULA_and         : out    vl_logic;
+        ULA_not         : out    vl_logic;
+        \NOT\           : in     vl_logic;
+        carga_ac        : out    vl_logic;
+        carga_nz        : out    vl_logic;
+        carga_pc        : out    vl_logic;
+        goto_t0         : out    vl_logic;
+        NOP             : in     vl_logic;
+        carga_ri        : out    vl_logic;
+        t2              : in     vl_logic
+    );
+end uc;

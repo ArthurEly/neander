@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, E:/circuitosdigitais/lab041/lab041.bdf
+source_file = 1, E:/circuitosdigitais/lab041/db/lab041.cbx.xml
+design_name = lab041
+instance = comp, \pin_name1~output\, pin_name1~output, lab041, 1
+instance = comp, \pin_name2~output\, pin_name2~output, lab041, 1
+instance = comp, \pin_name3~output\, pin_name3~output, lab041, 1
+instance = comp, \pin_name4~output\, pin_name4~output, lab041, 1
+instance = comp, \a1~input\, a1~input, lab041, 1
+instance = comp, \a0~input\, a0~input, lab041, 1
+instance = comp, \inst1~0\, inst1~0, lab041, 1
+instance = comp, \inst1~1\, inst1~1, lab041, 1
+instance = comp, \inst1~2\, inst1~2, lab041, 1

@@ -1,0 +1,805 @@
+|ulaoitobits
+cout <= ulaumbit:inst20.cout
+x[0] => ulaumbit:inst.x
+x[1] => ulaumbit:inst11.x
+x[2] => ulaumbit:inst12.x
+x[3] => ulaumbit:inst13.x
+x[4] => ulaumbit:inst15.x
+x[5] => ulaumbit:inst17.x
+x[6] => ulaumbit:inst19.x
+x[7] => ulaumbit:inst20.x
+y[0] => ulaumbit:inst.y
+y[1] => ulaumbit:inst11.y
+y[2] => ulaumbit:inst12.y
+y[3] => ulaumbit:inst13.y
+y[4] => ulaumbit:inst15.y
+y[5] => ulaumbit:inst17.y
+y[6] => ulaumbit:inst19.y
+y[7] => ulaumbit:inst20.y
+cin => ulaumbit:inst.cin
+opcode[0] => ulaumbit:inst.opcode[0]
+opcode[0] => ulaumbit:inst11.opcode[0]
+opcode[0] => ulaumbit:inst12.opcode[0]
+opcode[0] => ulaumbit:inst13.opcode[0]
+opcode[0] => ulaumbit:inst15.opcode[0]
+opcode[0] => ulaumbit:inst17.opcode[0]
+opcode[0] => ulaumbit:inst19.opcode[0]
+opcode[0] => ulaumbit:inst20.opcode[0]
+opcode[1] => ulaumbit:inst.opcode[1]
+opcode[1] => ulaumbit:inst11.opcode[1]
+opcode[1] => ulaumbit:inst12.opcode[1]
+opcode[1] => ulaumbit:inst13.opcode[1]
+opcode[1] => ulaumbit:inst15.opcode[1]
+opcode[1] => ulaumbit:inst17.opcode[1]
+opcode[1] => ulaumbit:inst19.opcode[1]
+opcode[1] => ulaumbit:inst20.opcode[1]
+opcode[2] => ulaumbit:inst.opcode[2]
+opcode[2] => ulaumbit:inst11.opcode[2]
+opcode[2] => ulaumbit:inst12.opcode[2]
+opcode[2] => ulaumbit:inst13.opcode[2]
+opcode[2] => ulaumbit:inst15.opcode[2]
+opcode[2] => ulaumbit:inst17.opcode[2]
+opcode[2] => ulaumbit:inst19.opcode[2]
+opcode[2] => ulaumbit:inst20.opcode[2]
+out[0] <= ulaumbit:inst.out
+out[1] <= ulaumbit:inst11.out
+out[2] <= ulaumbit:inst12.out
+out[3] <= ulaumbit:inst13.out
+out[4] <= ulaumbit:inst15.out
+out[5] <= ulaumbit:inst17.out
+out[6] <= ulaumbit:inst19.out
+out[7] <= ulaumbit:inst20.out
+
+
+|ulaoitobits|ulaumbit:inst20
+cout <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+x => fulladder:inst.x
+x => inst4.IN1
+x => inst3.IN0
+x => inst5.IN0
+y => fulladder:inst.y
+y => inst4.IN0
+y => inst3.IN1
+y => inst22.IN0
+cin => fulladder:inst.cin
+opcode[0] => lab0412:inst1.a0
+opcode[1] => lab0412:inst1.a1
+opcode[2] => lab0412:inst1.a2
+out <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst20|fulladder:inst
+s <= halfadder:inst1.s
+x => halfadder:inst.x
+y => halfadder:inst.y
+cin => halfadder:inst1.y
+cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst20|fulladder:inst|halfadder:inst1
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+x => inst2.IN0
+x => inst.IN1
+y => inst2.IN1
+y => inst.IN0
+c <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst20|fulladder:inst|halfadder:inst
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+x => inst2.IN0
+x => inst.IN1
+y => inst2.IN1
+y => inst.IN0
+c <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst20|lab0412:inst1
+d7 <= lab041:inst2.d3
+a1 => lab041:inst2.a1
+a1 => lab041:inst1.a1
+a0 => lab041:inst2.a0
+a0 => lab041:inst1.a0
+a2 => lab041:inst2.stts
+a2 => inst3.IN0
+d6 <= lab041:inst2.d2
+d5 <= lab041:inst2.d1
+d4 <= lab041:inst2.d0
+d3 <= lab041:inst1.d3
+d2 <= lab041:inst1.d2
+d1 <= lab041:inst1.d1
+d0 <= lab041:inst1.d0
+
+
+|ulaoitobits|ulaumbit:inst20|lab0412:inst1|lab041:inst2
+d3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+stts => inst.IN0
+stts => inst6.IN0
+stts => inst7.IN0
+stts => inst8.IN0
+a1 => inst3.IN0
+a1 => inst2.IN0
+a1 => inst4.IN0
+a0 => inst3.IN1
+a0 => inst5.IN0
+a0 => inst1.IN1
+d2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+d0 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst20|lab0412:inst1|lab041:inst1
+d3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+stts => inst.IN0
+stts => inst6.IN0
+stts => inst7.IN0
+stts => inst8.IN0
+a1 => inst3.IN0
+a1 => inst2.IN0
+a1 => inst4.IN0
+a0 => inst3.IN1
+a0 => inst5.IN0
+a0 => inst1.IN1
+d2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+d0 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst19
+cout <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+x => fulladder:inst.x
+x => inst4.IN1
+x => inst3.IN0
+x => inst5.IN0
+y => fulladder:inst.y
+y => inst4.IN0
+y => inst3.IN1
+y => inst22.IN0
+cin => fulladder:inst.cin
+opcode[0] => lab0412:inst1.a0
+opcode[1] => lab0412:inst1.a1
+opcode[2] => lab0412:inst1.a2
+out <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst19|fulladder:inst
+s <= halfadder:inst1.s
+x => halfadder:inst.x
+y => halfadder:inst.y
+cin => halfadder:inst1.y
+cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst19|fulladder:inst|halfadder:inst1
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+x => inst2.IN0
+x => inst.IN1
+y => inst2.IN1
+y => inst.IN0
+c <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst19|fulladder:inst|halfadder:inst
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+x => inst2.IN0
+x => inst.IN1
+y => inst2.IN1
+y => inst.IN0
+c <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst19|lab0412:inst1
+d7 <= lab041:inst2.d3
+a1 => lab041:inst2.a1
+a1 => lab041:inst1.a1
+a0 => lab041:inst2.a0
+a0 => lab041:inst1.a0
+a2 => lab041:inst2.stts
+a2 => inst3.IN0
+d6 <= lab041:inst2.d2
+d5 <= lab041:inst2.d1
+d4 <= lab041:inst2.d0
+d3 <= lab041:inst1.d3
+d2 <= lab041:inst1.d2
+d1 <= lab041:inst1.d1
+d0 <= lab041:inst1.d0
+
+
+|ulaoitobits|ulaumbit:inst19|lab0412:inst1|lab041:inst2
+d3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+stts => inst.IN0
+stts => inst6.IN0
+stts => inst7.IN0
+stts => inst8.IN0
+a1 => inst3.IN0
+a1 => inst2.IN0
+a1 => inst4.IN0
+a0 => inst3.IN1
+a0 => inst5.IN0
+a0 => inst1.IN1
+d2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+d0 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst19|lab0412:inst1|lab041:inst1
+d3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+stts => inst.IN0
+stts => inst6.IN0
+stts => inst7.IN0
+stts => inst8.IN0
+a1 => inst3.IN0
+a1 => inst2.IN0
+a1 => inst4.IN0
+a0 => inst3.IN1
+a0 => inst5.IN0
+a0 => inst1.IN1
+d2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+d0 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst17
+cout <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+x => fulladder:inst.x
+x => inst4.IN1
+x => inst3.IN0
+x => inst5.IN0
+y => fulladder:inst.y
+y => inst4.IN0
+y => inst3.IN1
+y => inst22.IN0
+cin => fulladder:inst.cin
+opcode[0] => lab0412:inst1.a0
+opcode[1] => lab0412:inst1.a1
+opcode[2] => lab0412:inst1.a2
+out <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst17|fulladder:inst
+s <= halfadder:inst1.s
+x => halfadder:inst.x
+y => halfadder:inst.y
+cin => halfadder:inst1.y
+cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst17|fulladder:inst|halfadder:inst1
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+x => inst2.IN0
+x => inst.IN1
+y => inst2.IN1
+y => inst.IN0
+c <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst17|fulladder:inst|halfadder:inst
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+x => inst2.IN0
+x => inst.IN1
+y => inst2.IN1
+y => inst.IN0
+c <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst17|lab0412:inst1
+d7 <= lab041:inst2.d3
+a1 => lab041:inst2.a1
+a1 => lab041:inst1.a1
+a0 => lab041:inst2.a0
+a0 => lab041:inst1.a0
+a2 => lab041:inst2.stts
+a2 => inst3.IN0
+d6 <= lab041:inst2.d2
+d5 <= lab041:inst2.d1
+d4 <= lab041:inst2.d0
+d3 <= lab041:inst1.d3
+d2 <= lab041:inst1.d2
+d1 <= lab041:inst1.d1
+d0 <= lab041:inst1.d0
+
+
+|ulaoitobits|ulaumbit:inst17|lab0412:inst1|lab041:inst2
+d3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+stts => inst.IN0
+stts => inst6.IN0
+stts => inst7.IN0
+stts => inst8.IN0
+a1 => inst3.IN0
+a1 => inst2.IN0
+a1 => inst4.IN0
+a0 => inst3.IN1
+a0 => inst5.IN0
+a0 => inst1.IN1
+d2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+d0 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst17|lab0412:inst1|lab041:inst1
+d3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+stts => inst.IN0
+stts => inst6.IN0
+stts => inst7.IN0
+stts => inst8.IN0
+a1 => inst3.IN0
+a1 => inst2.IN0
+a1 => inst4.IN0
+a0 => inst3.IN1
+a0 => inst5.IN0
+a0 => inst1.IN1
+d2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+d0 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst15
+cout <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+x => fulladder:inst.x
+x => inst4.IN1
+x => inst3.IN0
+x => inst5.IN0
+y => fulladder:inst.y
+y => inst4.IN0
+y => inst3.IN1
+y => inst22.IN0
+cin => fulladder:inst.cin
+opcode[0] => lab0412:inst1.a0
+opcode[1] => lab0412:inst1.a1
+opcode[2] => lab0412:inst1.a2
+out <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst15|fulladder:inst
+s <= halfadder:inst1.s
+x => halfadder:inst.x
+y => halfadder:inst.y
+cin => halfadder:inst1.y
+cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst15|fulladder:inst|halfadder:inst1
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+x => inst2.IN0
+x => inst.IN1
+y => inst2.IN1
+y => inst.IN0
+c <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst15|fulladder:inst|halfadder:inst
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+x => inst2.IN0
+x => inst.IN1
+y => inst2.IN1
+y => inst.IN0
+c <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst15|lab0412:inst1
+d7 <= lab041:inst2.d3
+a1 => lab041:inst2.a1
+a1 => lab041:inst1.a1
+a0 => lab041:inst2.a0
+a0 => lab041:inst1.a0
+a2 => lab041:inst2.stts
+a2 => inst3.IN0
+d6 <= lab041:inst2.d2
+d5 <= lab041:inst2.d1
+d4 <= lab041:inst2.d0
+d3 <= lab041:inst1.d3
+d2 <= lab041:inst1.d2
+d1 <= lab041:inst1.d1
+d0 <= lab041:inst1.d0
+
+
+|ulaoitobits|ulaumbit:inst15|lab0412:inst1|lab041:inst2
+d3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+stts => inst.IN0
+stts => inst6.IN0
+stts => inst7.IN0
+stts => inst8.IN0
+a1 => inst3.IN0
+a1 => inst2.IN0
+a1 => inst4.IN0
+a0 => inst3.IN1
+a0 => inst5.IN0
+a0 => inst1.IN1
+d2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+d0 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst15|lab0412:inst1|lab041:inst1
+d3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+stts => inst.IN0
+stts => inst6.IN0
+stts => inst7.IN0
+stts => inst8.IN0
+a1 => inst3.IN0
+a1 => inst2.IN0
+a1 => inst4.IN0
+a0 => inst3.IN1
+a0 => inst5.IN0
+a0 => inst1.IN1
+d2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+d0 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst13
+cout <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+x => fulladder:inst.x
+x => inst4.IN1
+x => inst3.IN0
+x => inst5.IN0
+y => fulladder:inst.y
+y => inst4.IN0
+y => inst3.IN1
+y => inst22.IN0
+cin => fulladder:inst.cin
+opcode[0] => lab0412:inst1.a0
+opcode[1] => lab0412:inst1.a1
+opcode[2] => lab0412:inst1.a2
+out <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst13|fulladder:inst
+s <= halfadder:inst1.s
+x => halfadder:inst.x
+y => halfadder:inst.y
+cin => halfadder:inst1.y
+cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst13|fulladder:inst|halfadder:inst1
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+x => inst2.IN0
+x => inst.IN1
+y => inst2.IN1
+y => inst.IN0
+c <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst13|fulladder:inst|halfadder:inst
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+x => inst2.IN0
+x => inst.IN1
+y => inst2.IN1
+y => inst.IN0
+c <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst13|lab0412:inst1
+d7 <= lab041:inst2.d3
+a1 => lab041:inst2.a1
+a1 => lab041:inst1.a1
+a0 => lab041:inst2.a0
+a0 => lab041:inst1.a0
+a2 => lab041:inst2.stts
+a2 => inst3.IN0
+d6 <= lab041:inst2.d2
+d5 <= lab041:inst2.d1
+d4 <= lab041:inst2.d0
+d3 <= lab041:inst1.d3
+d2 <= lab041:inst1.d2
+d1 <= lab041:inst1.d1
+d0 <= lab041:inst1.d0
+
+
+|ulaoitobits|ulaumbit:inst13|lab0412:inst1|lab041:inst2
+d3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+stts => inst.IN0
+stts => inst6.IN0
+stts => inst7.IN0
+stts => inst8.IN0
+a1 => inst3.IN0
+a1 => inst2.IN0
+a1 => inst4.IN0
+a0 => inst3.IN1
+a0 => inst5.IN0
+a0 => inst1.IN1
+d2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+d0 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst13|lab0412:inst1|lab041:inst1
+d3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+stts => inst.IN0
+stts => inst6.IN0
+stts => inst7.IN0
+stts => inst8.IN0
+a1 => inst3.IN0
+a1 => inst2.IN0
+a1 => inst4.IN0
+a0 => inst3.IN1
+a0 => inst5.IN0
+a0 => inst1.IN1
+d2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+d0 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst12
+cout <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+x => fulladder:inst.x
+x => inst4.IN1
+x => inst3.IN0
+x => inst5.IN0
+y => fulladder:inst.y
+y => inst4.IN0
+y => inst3.IN1
+y => inst22.IN0
+cin => fulladder:inst.cin
+opcode[0] => lab0412:inst1.a0
+opcode[1] => lab0412:inst1.a1
+opcode[2] => lab0412:inst1.a2
+out <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst12|fulladder:inst
+s <= halfadder:inst1.s
+x => halfadder:inst.x
+y => halfadder:inst.y
+cin => halfadder:inst1.y
+cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst12|fulladder:inst|halfadder:inst1
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+x => inst2.IN0
+x => inst.IN1
+y => inst2.IN1
+y => inst.IN0
+c <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst12|fulladder:inst|halfadder:inst
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+x => inst2.IN0
+x => inst.IN1
+y => inst2.IN1
+y => inst.IN0
+c <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst12|lab0412:inst1
+d7 <= lab041:inst2.d3
+a1 => lab041:inst2.a1
+a1 => lab041:inst1.a1
+a0 => lab041:inst2.a0
+a0 => lab041:inst1.a0
+a2 => lab041:inst2.stts
+a2 => inst3.IN0
+d6 <= lab041:inst2.d2
+d5 <= lab041:inst2.d1
+d4 <= lab041:inst2.d0
+d3 <= lab041:inst1.d3
+d2 <= lab041:inst1.d2
+d1 <= lab041:inst1.d1
+d0 <= lab041:inst1.d0
+
+
+|ulaoitobits|ulaumbit:inst12|lab0412:inst1|lab041:inst2
+d3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+stts => inst.IN0
+stts => inst6.IN0
+stts => inst7.IN0
+stts => inst8.IN0
+a1 => inst3.IN0
+a1 => inst2.IN0
+a1 => inst4.IN0
+a0 => inst3.IN1
+a0 => inst5.IN0
+a0 => inst1.IN1
+d2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+d0 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst12|lab0412:inst1|lab041:inst1
+d3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+stts => inst.IN0
+stts => inst6.IN0
+stts => inst7.IN0
+stts => inst8.IN0
+a1 => inst3.IN0
+a1 => inst2.IN0
+a1 => inst4.IN0
+a0 => inst3.IN1
+a0 => inst5.IN0
+a0 => inst1.IN1
+d2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+d0 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst11
+cout <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+x => fulladder:inst.x
+x => inst4.IN1
+x => inst3.IN0
+x => inst5.IN0
+y => fulladder:inst.y
+y => inst4.IN0
+y => inst3.IN1
+y => inst22.IN0
+cin => fulladder:inst.cin
+opcode[0] => lab0412:inst1.a0
+opcode[1] => lab0412:inst1.a1
+opcode[2] => lab0412:inst1.a2
+out <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst11|fulladder:inst
+s <= halfadder:inst1.s
+x => halfadder:inst.x
+y => halfadder:inst.y
+cin => halfadder:inst1.y
+cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst11|fulladder:inst|halfadder:inst1
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+x => inst2.IN0
+x => inst.IN1
+y => inst2.IN1
+y => inst.IN0
+c <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst11|fulladder:inst|halfadder:inst
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+x => inst2.IN0
+x => inst.IN1
+y => inst2.IN1
+y => inst.IN0
+c <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst11|lab0412:inst1
+d7 <= lab041:inst2.d3
+a1 => lab041:inst2.a1
+a1 => lab041:inst1.a1
+a0 => lab041:inst2.a0
+a0 => lab041:inst1.a0
+a2 => lab041:inst2.stts
+a2 => inst3.IN0
+d6 <= lab041:inst2.d2
+d5 <= lab041:inst2.d1
+d4 <= lab041:inst2.d0
+d3 <= lab041:inst1.d3
+d2 <= lab041:inst1.d2
+d1 <= lab041:inst1.d1
+d0 <= lab041:inst1.d0
+
+
+|ulaoitobits|ulaumbit:inst11|lab0412:inst1|lab041:inst2
+d3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+stts => inst.IN0
+stts => inst6.IN0
+stts => inst7.IN0
+stts => inst8.IN0
+a1 => inst3.IN0
+a1 => inst2.IN0
+a1 => inst4.IN0
+a0 => inst3.IN1
+a0 => inst5.IN0
+a0 => inst1.IN1
+d2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+d0 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst11|lab0412:inst1|lab041:inst1
+d3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+stts => inst.IN0
+stts => inst6.IN0
+stts => inst7.IN0
+stts => inst8.IN0
+a1 => inst3.IN0
+a1 => inst2.IN0
+a1 => inst4.IN0
+a0 => inst3.IN1
+a0 => inst5.IN0
+a0 => inst1.IN1
+d2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+d0 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst
+cout <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+x => fulladder:inst.x
+x => inst4.IN1
+x => inst3.IN0
+x => inst5.IN0
+y => fulladder:inst.y
+y => inst4.IN0
+y => inst3.IN1
+y => inst22.IN0
+cin => fulladder:inst.cin
+opcode[0] => lab0412:inst1.a0
+opcode[1] => lab0412:inst1.a1
+opcode[2] => lab0412:inst1.a2
+out <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst|fulladder:inst
+s <= halfadder:inst1.s
+x => halfadder:inst.x
+y => halfadder:inst.y
+cin => halfadder:inst1.y
+cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst|fulladder:inst|halfadder:inst1
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+x => inst2.IN0
+x => inst.IN1
+y => inst2.IN1
+y => inst.IN0
+c <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst|fulladder:inst|halfadder:inst
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+x => inst2.IN0
+x => inst.IN1
+y => inst2.IN1
+y => inst.IN0
+c <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst|lab0412:inst1
+d7 <= lab041:inst2.d3
+a1 => lab041:inst2.a1
+a1 => lab041:inst1.a1
+a0 => lab041:inst2.a0
+a0 => lab041:inst1.a0
+a2 => lab041:inst2.stts
+a2 => inst3.IN0
+d6 <= lab041:inst2.d2
+d5 <= lab041:inst2.d1
+d4 <= lab041:inst2.d0
+d3 <= lab041:inst1.d3
+d2 <= lab041:inst1.d2
+d1 <= lab041:inst1.d1
+d0 <= lab041:inst1.d0
+
+
+|ulaoitobits|ulaumbit:inst|lab0412:inst1|lab041:inst2
+d3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+stts => inst.IN0
+stts => inst6.IN0
+stts => inst7.IN0
+stts => inst8.IN0
+a1 => inst3.IN0
+a1 => inst2.IN0
+a1 => inst4.IN0
+a0 => inst3.IN1
+a0 => inst5.IN0
+a0 => inst1.IN1
+d2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+d0 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ulaoitobits|ulaumbit:inst|lab0412:inst1|lab041:inst1
+d3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+stts => inst.IN0
+stts => inst6.IN0
+stts => inst7.IN0
+stts => inst8.IN0
+a1 => inst3.IN0
+a1 => inst2.IN0
+a1 => inst4.IN0
+a0 => inst3.IN1
+a0 => inst5.IN0
+a0 => inst1.IN1
+d2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+d0 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
